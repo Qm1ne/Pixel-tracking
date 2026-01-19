@@ -1,13 +1,16 @@
 require('dotenv').config();
 const express = require('express');
-const cors = require('cors');
-const { Pool } = require('pg');
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const cors = require("cors");
+const { Pool } = require('pg');
+
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: "https://aiautomatetn.com",  // your frontend domain
+    credentials: true
+}));
 app.use(express.json());
 
 // Database Connection
