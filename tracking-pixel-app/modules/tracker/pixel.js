@@ -2,7 +2,7 @@
     'use strict';
 
     const CONFIG = {
-        endpoint: 'http://localhost:3000/api/v1/event',
+        endpoint: 'https://pixel-tracking-7ohl.onrender.com/',
         id_cookie_name: 'utm_uuid'
     };
 
