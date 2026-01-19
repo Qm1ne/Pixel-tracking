@@ -16,6 +16,9 @@ app.use(express.json());
 // Database Connection
 const pool = new Pool({
     connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false // Neon requires SSL, but we skip strict cert validation 
+    }
 });
 
 // Health Check
