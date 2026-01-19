@@ -1,0 +1,17 @@
+{
+    "name": "universal-tracking-pixel",
+    "version": "1.0.0",
+    "description": "Universal Tracking Pixel Agent",
+    "workspaces": [
+        "modules/*"
+    ],
+    "scripts": {
+        "start": "concurrently \"npm run start:backend\" \"npm run start:dashboard\"",
+        "start:backend": "cd modules/backend && npm start",
+        "start:dashboard": "cd modules/dashboard && npm run dev",
+        "build:tracker": "cd modules/tracker && npm run build"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.0"
+    }
+}

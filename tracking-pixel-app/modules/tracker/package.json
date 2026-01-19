@@ -1,0 +1,13 @@
+{
+    "name": "tracker",
+    "version": "1.0.0",
+    "description": "Client-side tracking pixel",
+    "main": "dist/pixel.js",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite build --watch"
+    },
+    "devDependencies": {
+        "vite": "^5.0.0"
+    }
+}
